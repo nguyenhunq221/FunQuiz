@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
+    android:background="@drawable/hinhnen"
+    android:weightSum="10"
+    >
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_weight="0.5"
+            android:id="@+id/img_backhome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="90dp"
+            android:background="@null"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:layout_weight="0.5"
+            android:id="@+id/imgbtn_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:background="@null"
+            android:src="@drawable/unmute" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="9"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_score"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Score:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:id="@+id/image_gamename"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/quiz"
+            />
+
+    <RelativeLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_question_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_blue_coner_10"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="2dp"
+            android:text="Content"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_orange_coner_30"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:text="Question 1"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_weight="0.25"
+        android:id="@+id/txt_answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Answer 1"
+        android:background="@drawable/bg_blue_coner_10"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+        <TextView
+            android:layout_weight="0.25"
+            android:id="@+id/txt_answer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Answer 2"
+            android:background="@drawable/bg_blue_coner_10"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+        />
+        <TextView
+            android:layout_weight="0.25"
+            android:id="@+id/txt_answer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Answer 3"
+            android:background="@drawable/bg_blue_coner_10"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+        <TextView
+            android:layout_weight="0.25"
+            android:id="@+id/txt_answer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Answer 4"
+            android:background="@drawable/bg_blue_coner_10"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
